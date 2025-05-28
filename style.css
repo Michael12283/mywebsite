@@ -1,0 +1,25 @@
+
+.transform-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.transform-img img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.transform-img img:last-child {
+  opacity: 0;
+  z-index: 2;
+}
+
+.transform-img:hover img:last-child {
+  opacity: 1;
+}

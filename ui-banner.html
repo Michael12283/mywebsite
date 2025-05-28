@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UI Banner - Featured Units</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #FFD700;
+      text-shadow: 0 0 5px #FFD700;
+    }
+
+    .unit-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .unit-card {
+      background-color: #1e1e1e;
+      border: 2px solid #555;
+      border-radius: 15px;
+      padding: 10px;
+      width: 200px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .unit-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #FFD700;
+    }
+
+    .transform-img {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    .transform-img img {
+      width: 100%;
+      border-radius: 10px;
+      transition: opacity 0.3s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .transform-img img:first-child {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .transform-img img:last-child {
+      opacity: 0;
+      z-index: 2;
+    }
+
+    .transform-img:hover img:first-child {
+      opacity: 0;
+    }
+
+    .transform-img:hover img:last-child {
+      opacity: 1;
+    }
+
+    .unit-card h4 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+
+    .unit-card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    a {
+      color: #c378ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 Featured Units – UI Banner 🔥</h1>
+
+  <div class="unit-grid">
+
+    <!-- Caulifla & Kale (tag unit hover to Kale) -->
+    <div class="unit-card">
+      <div class="transform-img">
+        <img src="Caulifla.jpg" alt="Caulifla">
+        <img src="Kale.jpg" alt="Kale">
+      </div>
+      <h4>SP Caulifla & Kale (NEW)</h4>
+      <p>1.000%</p>
+    </div>
+
+    <!-- Vegito (hover to SSB Vegito) -->
+    <div class="unit-card">
+      <div class="transform-img">
+        <img src="VegitoBase.jpg" alt="Vegito">
+        <img src="VegitoSSB.jpg" alt="Vegito Blue">
+      </div>
+      <h4>SP Super Saiyan God SS Vegito</h4>
+      <p>0.050%</p>
+    </div>
+
+    <!-- Super Saiyan God Goku (hover to UI Goku) -->
+    <div class="unit-card">
+      <div class="transform-img">
+        <img src="SSGoku.jpg" alt="SS God Goku">
+        <img src="UIGoku.jpg" alt="UI Goku">
+      </div>
+      <h4>SP Ultra Instinct Goku</h4>
+      <p>0.500%</p>
+    </div>
+
+    <!-- Rest without transformation -->
+    <div class="unit-card">
+      <img src="FriezaGoku.jpg" alt="Goku & Final Form Frieza">
+      <h4>SP Goku & Final Form Frieza</h4>
+      <p>0.250%</p>
+    </div>
+
+    <div class="unit-card">
+      <img src="SignGoku.jpg" alt="Sign Goku">
+      <h4>SP Ultra Instinct -Sign- Goku</h4>
+      <p>0.250%</p>
+    </div>
+
+    <div class="unit-card">
+      <img src="GokuBlack.jpg" alt="Goku Black">
+      <h4>SP Super Saiyan Rosé Goku Black</h4>
+      <p>0.050%</p>
+    </div>
+
+    <div class="unit-card">
+      <img src="Gotenks.jpg" alt="Gotenks">
+      <h4>SP Super Saiyan 3 Gotenks</h4>
+      <p>0.050%</p>
+    </div>
+
+    <div class="unit-card">
+      <img src="Goku.jpg" alt="Goku">
+      <h4>SP Goku</h4>
+      <p>0.050%</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 40px;"><a href="legends.html">← Back to Legends Page</a></p>
+
+</body>
+</html>
+
